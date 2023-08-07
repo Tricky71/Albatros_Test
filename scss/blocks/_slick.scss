@@ -1,0 +1,58 @@
+.slick-track
+{
+    display: flex !important;
+}
+
+.slick-slide
+{
+    height: inherit !important;
+}
+
+.slick-dots {
+   
+  @include reset-list;
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 128px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slick-dots button {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0;
+  padding: 0;
+  background-color: #959494;
+}
+
+.slick-active button {
+  background-color: #fff;
+  outline: none;
+}
+
+.slick-arrow {
+  position: absolute;
+  stroke: #959494;
+  &--right {
+    bottom: 0;
+    left: 640px;
+  } &--left {
+    bottom: 0;
+    left: 370px;
+  } &--inactive {
+    display: none;
+  }  &:active {
+    stroke: #fff;
+  }
+}
+
+
+
+@media(min-width: $desktop-width) {
+  .slick-dots{
+    transform: translateX(-350px);
+  }
+}

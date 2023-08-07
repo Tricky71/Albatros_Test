@@ -1,0 +1,20 @@
+.header {
+  padding: 19px 0;
+  background-color: #fff;
+}
+
+.header__logo {
+  width: 100px;
+}
+
+@media(min-width: $tablet-width) {
+  .header__logo {
+    width: 122px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .header {
+    padding: 24px 0;
+  }
+}

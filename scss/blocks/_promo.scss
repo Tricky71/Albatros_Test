@@ -1,0 +1,197 @@
+.promo {
+  padding-top: 24px;
+  padding-bottom: 56px;
+  background-color: #F9F7F6;
+  background-image: url('../img/svg/bg.svg'), linear-gradient(180deg, #FCFFEA 23.96%, #FFCBE1 72.40%, #FFCBCB 100%); 
+  background-size: contain, auto 24%;
+  background-position: 100px 50px, top center;
+  background-repeat: no-repeat;
+}
+
+.promo__top {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.promo__top-title {
+  margin-bottom: 8px;
+  font-size: 23px;
+  line-height: 32px;
+  font-weight: 500;
+  
+    &--desktop {
+  display: none;
+  }
+}
+
+.promo__top-text {
+  margin: 0;
+  padding: 0;
+  // font-size: 16px;
+}
+
+.promo__content-wrapper {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.promo__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.promo__content-img {
+  margin-bottom: 8px;
+}
+
+.promo__content-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4px;
+  font-size: 23px;
+  line-height: 32px;
+}
+
+.promo__content-description {
+  margin-bottom: 8px;
+  // font-size: 16px;
+  // line-height: 24px;
+}
+
+.promo__content-text {
+  margin-bottom: 24px;
+  font-size: 19px;
+}
+
+.promo__content-info {
+  display: none;
+}
+
+.promo__video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 42.25%; 
+}
+
+.promo__video-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.promo__forcast-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  font-size: 23px;
+}
+
+.promo__forcast-audio {
+  overflow: hidden;
+  padding: 16px 0 48px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+@media(min-width: $tablet-width) {
+  .promo__top {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .promo__top-title {
+    width: 320px;
+      &--desktop {
+        display: block;
+      }
+      &--mobile {
+        display: none;
+      }
+  }
+
+  .promo__top-text {
+    width: 50%;
+  }
+
+  .promo__forcast-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  
+}
+
+@media(min-width: $desktop-width) {
+  .promo {
+    padding-top: 40px;
+    background-size: 422px auto, auto 24%;
+    background-position: 50px 50px, top center;
+  }
+
+  .promo__top {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .promo__top-title {
+    width: 380px;
+    font-size: 28px;
+    line-height: 36px;
+      &--desktop {
+        display: block;
+      }
+      &--mobile {
+        display: none;
+      }
+  }
+
+  .promo__top-text {
+    width: 50%;
+    
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  .promo__content-wrapper {
+    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .promo__content {
+    width: 240px;
+  }
+
+  .promo__content-info {
+    display: block;
+    margin-top: auto;
+  }
+
+  .promo__video {
+    width: 810px;
+  }
+
+  .promo__forcast-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .promo__forcast-audio {
+    // width: 900px;
+    // margin: 0 auto;
+  }
+}
+

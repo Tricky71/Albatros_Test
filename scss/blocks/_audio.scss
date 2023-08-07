@@ -1,0 +1,110 @@
+.audio {
+  padding: 16px 0 40px 0;
+}
+
+.audio__icons {
+  @include reset-list;
+  width: 900px;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  // overflow: hidden;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.audio__icon {
+  width: 72px;
+  height: 72px;
+  outline: none;
+}
+
+.audio__button-name {
+  line-height: 12px;
+}
+
+.audio__button {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: $text;
+  background-color: #fff;
+  font-size: 12px;
+  outline: none;
+    &--active {
+      background-image: url('../img/blur.svg');
+      background-size: 100px;
+      background-position: center 20px;
+      background-repeat: no-repeat;
+      outline: none;
+    }
+    &:visited {
+      outline: none;
+    }
+
+    &:active {
+      outline: none;
+    }
+    
+    &:focus {
+      outline: 1px solid #FF9696;
+    }
+}
+
+.audio__bottom {
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+    & audio {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+}
+
+.audio__info {
+  margin-bottom: 16px;
+  font-size: 19px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.audio__forcast-button {
+  padding: 12px 24px;
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #3046BB;
+  background: var(--button-gradient);
+    &:hover {
+      background: linear-gradient(180deg, #3046BB 100%);
+    }
+    &:active {
+      color: lighten($color: #3046BB, $amount: 20%);
+      background: linear-gradient(180deg, #3046BB 100%);
+    }
+}
+
+@media(min-width: $desktop-width) {
+  .audio__bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+      & audio {
+        margin-bottom: 0;
+        width: 465px;
+      }
+  }
+
+  .audio__info {
+    margin-bottom: 0;
+    width: 200px;
+    font-size: 16px;
+  }
+}
